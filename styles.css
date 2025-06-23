@@ -3,7 +3,7 @@ nav img {
     height: 59.05px;
 }
 
-nav {
+#menu {
     display: flex;
     justify-content: space-between;
 }
@@ -17,12 +17,30 @@ nav {
     list-style: none;
 }
 
-#filtres{
-    display: flex;
-    justify-content: center;
-    gap:19px;
+#filtre{
+    display:flex;
+    gap: 16px;
     list-style: none;
 }
+
+.footer{
+    display: flex;
+    align-content: space-between;
+    
+}
+
+.aPropos ul {
+    list-style: none;
+}
+
+.hebergements ul{
+    list-style: none;
+}
+
+.assistance ul{
+    list-style: none;
+}
+
 
 :root {
     --main-color: #0065FC;
