@@ -95,10 +95,32 @@ nav img {
     list-style: none;
 }
 
-#filtre{
-    display:flex;
-    gap: 16px;
-    list-style: none;
+
+
+.filtre {
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+
+.filtre ul{
+    display: flex;
+    gap:15px;
+}
+
+.filtre li {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    background-color:white;
+    border: 1px solid #D9D9D9;
+    gap:15px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.filtre li:hover{
+    background-color: #DEEBFF;
 }
 
 .footer{
