@@ -13,26 +13,29 @@ nav img {
 }
 
 .logo{
-    width: 189.85px;
-    height: auto;
+    width: auto;
+    height: 26px;
 }
 
 #hebergement,
 #activités {
     padding: 5px;
+    font-size: 19px;
     border-top: 1px, solid, transparent;
+    transition: all 0.3s ease;
 }
 
 #hebergement:hover,
-#activités :hover {
+#activités:hover {
     color: rgba(0, 101, 252, 1);
     margin-top: 1px;
-    border-top: 1px, solid, rgba(0, 101, 252, 1);
+    border-top: 1px solid  rgba(0, 101, 252, 1);
 }
 
 #menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 0px;
     margin-left: 10px;
     margin-right: 10px;
@@ -44,8 +47,48 @@ nav img {
     margin-top: 10px;
 }
 
+.BarreRecherche{
+    display: flex;
+    align-items: center;
+    margin:30px 0px 30px 0px;
+    max-width: 400px;
+   }
 
-
+   .BarreRecherche .icone{
+    background-color: #F2F2F2;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .BarreRecherche .icone i {
+    color: black;
+    font-size: 26px;
+  }
+  
+  .BarreRecherche input {
+    border: none;
+    padding: 12px;
+    font-size: 26px;
+    flex: 1;
+    outline: none;
+  }
+  
+  .BarreRecherche button {
+    background-color: #0065FC;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 26px;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px;
+ }
+  
+  
 #liens {
     display: flex;
     gap: 16px;
