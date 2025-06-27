@@ -1,15 +1,50 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    margin: 0;
+    background:rgba(255, 255, 255, 1);
+}
+
 nav img {
     width: 189.85px;
     height: 59.05px;
 }
 
+.logo{
+    width: 189.85px;
+    height: auto;
+}
+
+#hebergement,
+#activités {
+    padding: 5px;
+    border-top: 1px, solid, transparent;
+}
+
+#hebergement:hover,
+#activités :hover {
+    color: rgba(0, 101, 252, 1);
+    margin-top: 1px;
+    border-top: 1px, solid, rgba(0, 101, 252, 1);
+}
+
 #menu {
     display: flex;
     justify-content: space-between;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    margin-bottom: 50px;
 }
-* {
-    font-family: 'Raleway', sans-serif;
+
+.TitreRecherche {
+    margin-top: 10px;
 }
+
+
 
 #liens {
     display: flex;
