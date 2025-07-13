@@ -88,14 +88,14 @@ header ul {
 .activites-header {
     margin-top: -24px;
     padding: 16px;
-    border-top: 2px solid transparent;
+    border: 2px solid transparent;
 }
 
 .hebergement-header:hover,
 .activites-header:hover {
 
     color: var(--main-color);
-    border-color: var(--main-color);
+    border-top-color: var(--main-color);
 
 }
 
@@ -181,7 +181,11 @@ button {
 }
 
 
-
+.information {
+    display: flex;
+    gap: 30px;
+    margin: 35px 0px 35px 10px;
+}
 
 /****** Hebergements And Populaires ***********/
 
@@ -298,11 +302,15 @@ button {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    margin: 33px;
+    margin: 33px 0px 33px 0px;
+    gap: 20px;
+
 }
 
 .activites-cards a {
     display: flex;
+    flex: 1;
+    /*largeur photo fort de Pomegues*/
 }
 
 .activites img {
@@ -390,8 +398,8 @@ footer li {
     .activites img {
         display: flex;
         justify-content: space-between;
-        height: 145px;
-        width: 125px;
+        /*height: 180px;*/
+        width: 100%;
     }
 
 }
@@ -435,15 +443,13 @@ footer li {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
-        
+
     }
 
-    .hebergement-header,
-    .activites-header {
-        margin-top: -24px;
-        padding: 16px;
-        border-bottom: 2px solid transparent;
-    }
+
+
+
+
 
     .hebergement-header:hover,
     .activites-header:hover {
@@ -454,9 +460,15 @@ footer li {
 
     }
 
-    footer{
+
+    .hebergements-and-populaires {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    footer {
         display: inline;
     }
 
-    
 }
