@@ -332,7 +332,6 @@ button {
 
 footer {
     display: flex;
-    align-content: space-between;
     background-color: var(--main-bg-color);
     justify-content: space-between;
     padding-left: 20px;
@@ -485,6 +484,10 @@ footer li {
         display: block;
     }
 
+    .hebergements {
+        background-color: white !important;
+    }
+
     .hebergements-cards {
         display: block;
     }
@@ -497,11 +500,8 @@ footer li {
     }
 
     .activites-cards .card {
-        width:100%;
-        /*! gap: 50px; */
-        /*! display: flex; */
-        /*! flex-direction: column; */
-        /*! align-content: space-between; */
+        width: 100%;
+
     }
 
     .activites img {
@@ -510,8 +510,17 @@ footer li {
         height: 180px;
         width: 100%;
     }
-        footer {
-            display: inline;
-        }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
 
     }
+
+}
