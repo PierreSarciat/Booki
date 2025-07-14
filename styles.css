@@ -312,17 +312,21 @@ button {
 }
 
 .activites-cards a {
-    display: flex;
+    /*! display: flex; */
     flex: 1;
     /*largeur photo fort de Pomegues*/
+    /*! height: 100%; */
 }
 
 .activites img {
     border-radius: 20px 20px 0px 0px;
     height: 290px;
-    width: 250px;
+    width: 100%;
 }
 
+.activites-cards .card-title{
+    padding-left: 20px;
+}
 
 
 /***********Footer**********/
@@ -405,10 +409,10 @@ footer li {
 
 
     .activites img {
-        display: flex;
-        justify-content: space-between;
-        /*height: 180px;*/
-        width: 100%;
+        /*! display: flex; */
+        /*! justify-content: space-between; */
+        height: 220px;
+        /*! width: 100%; */
     }
 
 }
@@ -461,7 +465,7 @@ footer li {
     .hebergement-header,
     .activites-header {
         margin-top: -24px;
-        padding: 10% 20%;
+        padding: 10% 25%;
         border: 2px solid transparent;
     }
 
