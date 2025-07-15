@@ -50,6 +50,7 @@ a {
 
 .card img {
     object-fit: cover;
+    width: 100%;
 }
 
 .card-title {
@@ -177,7 +178,7 @@ button {
     padding: 20px;
     border-radius: 25px;
     list-style: none;
-    /*! margin: 0; */
+
 }
 
 .filtre li:hover {
@@ -222,7 +223,6 @@ button {
 }
 
 .hebergements-cards .card {
-    /*display: flex;*/
     margin-top: 33px;
     padding: 5px;
     overflow: hidden;
@@ -290,11 +290,6 @@ button {
 /**************Actvités****************/
 
 
-.activites {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
 
 .activites h2 {
     display: flex;
@@ -312,20 +307,17 @@ button {
 }
 
 .activites-cards a {
-    /*! display: flex; */
-    flex: 1;
-    /*largeur photo fort de Pomegues*/
-    /*! height: 100%; */
+    width: 100%;
 }
 
 .activites img {
     border-radius: 20px 20px 0px 0px;
     height: 290px;
-    width: 100%;
 }
 
-.activites-cards .card-title{
+.activites-cards .card-title {
     padding-left: 20px;
+    padding-bottom: 20px;
 }
 
 
@@ -409,10 +401,8 @@ footer li {
 
 
     .activites img {
-        /*! display: flex; */
-        /*! justify-content: space-between; */
         height: 220px;
-        /*! width: 100%; */
+
     }
 
 }
@@ -512,7 +502,7 @@ footer li {
         display: flex;
         justify-content: space-between;
         height: 180px;
-        width: 100%;
+
     }
 
     footer {
