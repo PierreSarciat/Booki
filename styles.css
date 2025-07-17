@@ -21,6 +21,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
@@ -28,7 +29,7 @@ body {
     max-width: 1440px;
     min-width: 320px;
     padding: 0 50px;
-    margin: 0 auto;
+    /*! margin: 50px; */
     box-sizing: border-box;
 }
 
@@ -65,6 +66,10 @@ a {
     color: var(--main-bg-color)
 }
 
+main section{
+    padding: 10px;
+}
+
 /************HEADER********************************/
 
 header img {
@@ -87,7 +92,7 @@ header ul {
 
 .hebergement-header,
 .activites-header {
-    margin-top: -24px;
+    margin-top: -16px;
     padding: 16px;
     border: 2px solid transparent;
 }
@@ -101,7 +106,9 @@ header ul {
 }
 
 /****************Barre de recheche***************/
-
+ main section h1{
+    font-size: 22px;
+}
 
 .barre-recherche {
     display: flex;
@@ -175,10 +182,11 @@ button {
     font-weight: bold;
     border: 1px solid #D9D9D9;
     gap: 15px;
-    padding: 20px;
+    padding: 13px;
     border-radius: 25px;
     list-style: none;
 
+    font-size: 14px;
 }
 
 .filtre li:hover {
@@ -343,7 +351,10 @@ footer {
     background-color: var(--main-bg-color);
     justify-content: space-between;
     padding-left: 20px;
-    padding-right: 300px;
+    /*! padding-right: 300px; */
+    /*! gap: 50px; */
+    justify-content: space-around;
+    /*! padding: 0 90px 0 90px; */
 }
 
 
@@ -423,7 +434,7 @@ footer li {
 @media (max-width: 767.98px) {
 
     .main-container {
-        padding: 0 10px;
+        padding: 0;
     }
 
 
@@ -439,8 +450,10 @@ footer li {
     }
 
     header ul {
-        justify-content: center;
-        padding: 5px;
+        /*! justify-content: center; */
+        /*! padding: 5px; */
+        width: 100%;
+        padding: 0px;
     }
 
 
@@ -469,9 +482,12 @@ footer li {
 
     .hebergement-header,
     .activites-header {
-        margin-top: -24px;
-        padding: 10% 25%;
+        /*! margin-top: -24px; */
+        /*! padding: 10% 25%; */
         border: 2px solid transparent;
+        /*! box-sizing: border-box; */
+        width: 50%;
+        text-align: center;
     }
 
     .hebergement-header:hover,
