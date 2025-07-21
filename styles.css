@@ -489,7 +489,7 @@ footer li {
     }
 
     .hebergements-and-populaires {
-        display: flex;
+        /*display: flex;*/
         flex-direction: column-reverse;
     }
 
@@ -506,7 +506,7 @@ footer li {
     }
 
     .activites-cards {
-        display: flex;
+        /*! display: flex; */
         gap: 20px;
         flex-direction: column;
         padding: 0px 30px;
@@ -525,7 +525,7 @@ footer li {
     }
 
     footer {
-        display: flex;
+        /*! display: flex; */
         flex-direction: column;
         width: 100%;
     }
