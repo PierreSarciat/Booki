@@ -46,6 +46,7 @@ a {
     background-color: white;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    width: 100%;
 }
 
 .card img {
@@ -90,7 +91,6 @@ header ul {
 }
 
 .hebergement-header,
-/****bordure bleu en haut du champs en desktop*******/
 .activites-header {
     margin-top: -16px;
     padding: 16px;
@@ -99,16 +99,13 @@ header ul {
 
 .hebergement-header:hover,
 .activites-header:hover {
-
     color: var(--main-color);
     border-top-color: var(--main-color);
-
 }
 
 /****************Barre de recheche***************/
 
 main section h1 {
-    /**********retour à la ligne conforme à la maquette********/
     font-size: 22px;
 }
 
@@ -116,7 +113,7 @@ main section h1 {
     display: flex;
     margin: 30px 0px 30px 0px;
     max-width: 400px;
-    border-color: var(--main-bg-color);
+    /*! border-color: var(--main-bg-color); */
 }
 
 .icone {
@@ -199,7 +196,6 @@ button {
     border-radius: 30px;
     text-align: center;
     line-height: 30px;
-    /*taille de la ligne d' écriture*/
     margin-right: 15px;
 }
 
@@ -331,7 +327,7 @@ button {
 
 .activites-cards .card-title {
     padding-left: 20px;
-    padding-bottom: 20px;
+    /*! padding-bottom: 20px; */
     height: 40px;
 }
 
@@ -371,6 +367,7 @@ footer li {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
+
 @media (max-width: 1024px) {
 
     .filtre {
@@ -410,6 +407,10 @@ footer li {
         font-size: 13px;
     }
 
+    .activites-cards .card-title {
+        padding-bottom: 10px;
+    }
+
 
 
     .activites img {
@@ -424,7 +425,6 @@ footer li {
 
     .main-container {
         padding: 0;
-        /*******footer en bords de champs*****/
     }
 
 
@@ -440,7 +440,7 @@ footer li {
     }
 
     header ul {
-        padding: 0px;    /*****bordure bleu en bord de champs annule padding 40 par defaut navigateur****/
+        padding: 0px;
     }
 
     .hebergement-header,
@@ -482,19 +482,11 @@ footer li {
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
         max-width: 300px;
-        /*garder une même taille de cartouche*/
     }
 
     .hebergements-and-populaires section {
-
         border-radius: 0px;
-
-
     }
-
-
-
-
 
     .hebergements-and-populaires {
         display: flex;
